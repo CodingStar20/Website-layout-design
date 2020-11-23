@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('.//p2.jpg');
+            margin: 0px;
+            /* background-image: url('https://www.pexels.com/photo/student-doing-homework-at-table-at-night-4384147/'); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            /* background-origin: border-box; */
+            /* background-color: crimson; */
+            /* background-blend-mode: multiply; */
+
+        }
+         .container1{
+            /* background-color: rgba(128, 128, 128, 0.235); */
+            width: 100%;
+            /* display: flex; */
+            flex-direction: row;
+            /* justify-content: space-around; */
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+        }
+        .logo{
+            margin-left: 0px;
+            padding-left: 0px;
+            display:flex;
+            justify-content: center;
+            font-size: 25px;
+            color: maroon;
+           
+
+                }
+           
+
+
+
+
+
+
+
+
+        .col{
+            font-size: 25px;
+            font-weight: lighter;
+            list-style: none;
+            padding: 11px 14px 15px 25px ;
+            /* background-color: green; */
+            /* border:2px solid ; */
+            margin: 2px;
+            margin-bottom:32px;
+            margin-top: -63px;
+
+        }
+        .col a{
+            text-decoration: none;
+            color: black;
+            transition-property: text-decoration;
+            transition-duration: 3s;
+            color: maroon;
+            font-size:25px ;
+            font-weight: bold;
+
+        }
+        .col a:hover{
+            text-decoration: underline;
+            text-decoration-color:blue ;
+            /* background-color: rgba(0, 128, 0, 0.352); */
+            /* border: 2px solid rgba(0, 0, 255, 0.372); */
+            padding: 5px 5px;
+            
+        }
+        .nav-link{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            margin-left: -17px;
+            
+           
+            
+            flex-wrap: wrap;
+
+        }
+       
+        .search-bar{
+            float: right;
+            margin:-85px 0px 0px 0px;
+            padding: 0px 64px ;
+            /* font-size: 16px; */
+            
+        }
+        input{
+            padding: 10px 15px;
+            border-radius: 50px ;
+            border-style: solid;
+            border-color: rgba(13, 0, 255, 0.592);
+            margin-left: 15px;
+            font-size: 16px;
+            
+        }
+        /* input:hover{
+            margin-top: 15px;
+            padding-left:45px ;
+            padding-right:45px ;
+            border-radius: 50px;
+            border-color: blue;
+        } */
+        .btn{
+            padding: 11px 33px 8px 33px;
+            border-radius: 30px;
+            border-style: solid;
+            border-color: rgba(0, 0, 255, 0.626);
+            background-color: rgba(0, 0, 255, 0.427);
+            font-size:16px ;
+        }
+        .login-btn{
+            font-size: 16px;
+            background-color: rgba(0, 0, 255, 0.414);
+            border: 2px solid grey;
+            margin-top: 45px;
+            margin-left: 16px;
+            border-radius: 50px;
+            border-style: solid;
+            border-color: rgba(0, 0, 255, 0.407);
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            font-size: 18px;
+            
+        }
+
+
+        .btn2{
+            margin-left: 9px;
+        }
+        button a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+       .login-btn:hover{
+            width: 100px;
+            height: 50px;
+            /* background-color: gray; */
+        }
+
+        .Bollywood{
+            background-color: #581845;
+            text-align: center;
+            font-size: 25px;
+            color: whitesmoke;
+
+            /* margin:45px 0px 0px 0px  */
+       }
+        #Bollywood1{
+            /* padding: 5px 0px 5px auto; */
+            margin: 12px 0px 12px auto;
+            /* background-color: lawngreen; */
+        }
+
+
+
+        .Hollywood{
+            background-color: #581845;
+            text-align: center;
+            font-size: 25px;
+            /* margin:45px 0px 0px 0px  */
+            color: whitesmoke;
+
+       }
+        #Hollywood1{
+            /* padding: 5px 0px 5px auto; */
+            margin: 12px 0px 12px auto;
+            /* background-color: lawngreen; */
+        }
+
+
+        
+        .Sollywood{
+            background-color: #581845;
+            text-align: center;
+            font-size: 25px;
+            color: whitesmoke;
+            /* margin:45px 0px 0px 0px  */
+       }
+        #Sollywood1{
+            /* padding: 5px 0px 5px auto; */
+            margin: 12px 0px 12px auto;
+            /* background-color: lawngreen; */
+        }
+
+
+        .last{
+            width: 100%;
+            background-color:#581845 ;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            
+
+        }
+      
+        
+        .info-link{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* color: blue; */
+
+
+
+        }
+        .li1{
+            padding: 0px 16px 0px 33px;
+            margin: 65px 0px 18px 0px;
+        }
+        .li1 a{
+            font-size:25px ;
+            text-decoration: none;
+            color: red;
+        }
+        .about{
+            margin-left: -11px;
+            /* background-color: chocolate; */
+            height: 150px;
+            
+
+
+        }
+        @media screen and (max-width:930) {
+            .copy{
+                
+                /* padding: 20%; */
+
+            }
+            
+        }
+
+
+        .copy{
+            padding-top: 102px;
+            margin-left: 43px;
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: chartreuse; */
+            /* height: 50px; */
+            /* width: 150px; */
+            /* text-align: center; */
+            
+            
+            
+            }
+
+
+
+        .copy h2{
+            margin-left: 1vw;
+            text-align: center;
+            font-size: 40px;
+            color:honeydew;
+        }
+
+
+
+         .font{
+             width: 200px;
+             height: 200px;
+             /* background-color: blue; */
+             
+            
+            
+        
+
+        }
+      
+
+        .facebook,.twitter,.youtube,.instagram{
+            padding:0px 22px 0px 16px ;
+        }
+
+
+
+
+        .icon{
+            display: flex;
+            /* padding:0px 0px 0px 15px; */
+            margin: 80px 0px 0px -61px;
+            list-style-position: inside;
+            list-style-type: none;
+
+
+
+                    }
+
+
+
+
+
+        @media screen and (max-width:1371px) {
+            .about{
+                margin-bottom:-175px;
+            }
+            .li1{
+                padding: 0px 12px;
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:1330px) {
+            .search-bar{
+                width: 50vw;
+               margin-top: -60px;
+            }
+            
+        }
+        @media screen and (max-width:641px) {
+            .btn{
+                /* width: 70vw; */
+               margin-top: 9px;
+               margin-left:51px;
+            }
+            
+        }
+        /* @media screen and (max-width:605px) {
+            .col4,.col5{
+                display: flex;
+                align-self:center ;
+                
+               margin-top: 2px;
+               
+            }
+            
+        } */
+        @media screen and (max-width:1683px) {
+            input{
+                margin-top: 38px;
+               
+            }
+            
+        }
+        @media screen and (max-width:1267px) {
+            .nav-link{
+                /* width: 70vw; */
+             margin-top: 62px;
+            }
+            
+        }
+        @media screen and (max-width:1265px) {
+            .log-in{
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
+        @media screen and (max-width:738px) {
+            .btn{
+                margin-top: 5px;
+                margin-left: 20%;
+            }
+            
+        }
+
+        @media screen and (max-width:739px){
+    .Bollywood,.Hollywood,.South-indian{
+        margin-top: 75px;
+
+    }            
+        }
+
+
+        /* BOLLYWOOD MOVIES CONYTAINER */
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+    box-shadow: 4px 4px 1px 1px rgba(0, 0, 0, 0.681);
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+
+        }
+        img{
+            width: 300px;
+            
+        }
+       
+        .card .button-container{
+            display: flex;
+            flex-wrap: wrap;
+
+        
+        
+        
+        }
+        .trailer {
+            padding: 0px 0px 0px 0px;
+            width: 129px;
+            height: 45px;
+            border-radius: 8px;
+            border-style: solid ;
+            border-width: 2px;
+            border-color: navy;
+
+            margin: 0px 0px 6px 90px;
+            
+            /* background-color:rgba(0, 0, 255, 0.564); */
+            font-size:19px ;
+            box-shadow: 1px 1px 8px 0px black;
+            margin: 0px 0px 8px 90px ;
+            font-size:19px ;
+            padding: 0px 0px 5px 0px;
+        }
+        .download{
+            width: 129px;
+            height: 45px;
+            border-radius: 8px;
+            /* background-color: rgba(0, 0, 128, 0.448); */
+            box-shadow: 1px 1px 8px 1px black;
+            margin: 0px 0px 8px 90px ;
+            font-size:19px ;
+            padding: 0px 0px 5px 0px;
+            border-radius: 8px;
+            border-style: solid ;
+            border-width: 2px;
+            border-color: navy;
+            
+        }
+        .trailer:hover{
+            background-color: rgba(0, 0, 255, 0.633);
+            /* color: rgba(255, 0, 0, 0.797); */
+            color: whitesmoke;
+            width: 135px;
+            height: 59px;
+            /* width: 2px; */
+        }
+        .download:hover{
+            background-color: rgba(0, 0, 255, 0.633);
+            /* color: rgba(255, 0, 0, 0.797); */
+            color: whitesmoke;
+            width: 135px;
+            height: 59px;
+
+        }
+
+        
+        .trailer a{
+            text-decoration: none;
+            color:darkblue;
+
+        }
+        .download a{
+            text-decoration: none;
+            color:darkblue;
+
+        }
+        @media screen and (max-width:790px) {
+            .card{
+                    /* padding-top: 45px; */
+                    /* margin-left: 3%; */
+                    margin-top: 45px;
+                    margin-left: 30%;
+            }
+            
+        }
+
+
+
+
+
+
+
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="container1">
+            
+            <div class="logo">
+
+            
+                <h1><i>Movies3star.Com</i></h1>
+            </div>
+                    <div class="log-in">
+                        <button class="login-btn btn1" type="button" style="width:104px;height:48px" ><a href="#">login</a> </button>
+                        <button class="login-btn btn2" type="button" style="width:104px;height:48px" ><a href="/sing_up.html">Sing up</a></button>
+                    </div>
+            
+            <ul class="nav-link">
+
+                <li class="col col1"><a href="#">Home</a></li>
+                <li class="col col2"><a href="#">Hollywood</a></li>
+                <li class="col col3"><a href="#">Bollywood</a></li>
+                <li class="col col3"><a href="#">Bollywood</a></li>
+                <li class="col col4">Tollywood</li>
+                <li class="col col5">Music</li>
+            </ul>
+          
+            
+        </div>
+
+
+        <div class="search-bar">
+            <input type="search" value="" placeholder="Enter movie name">
+        <button class="btn" type="search" value="search">Search</button>
+        </div>
+        
+
+
+
+    </div>
+    <hr>
+<div class="Bollywood header">
+    <div id="Bollywood1">
+        <h2><em>Latest Bollywood Movies in hindi Dubbed</em></h2>
+
+    </div>
+</div>
+   <hr>
+                        <div class="flex bollywood-movie-container">
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/black.jpg" alt="">
+                                        <div class="button-container">
+                                              
+                                            <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                            <button type="button" class="button2 download"><a href="">Download</a></button>
+            
+                                        </div>
+                                    </div>
+                                        
+
+
+
+                                        
+                        </div>
+                        <hr>
+                        <div class="Hollywood header">
+                            <div id="Hollywood1">
+                                <h2><em>Latest Hollywood Movies in hindi Dubbed</em></h2>
+                        
+                            </div>
+                        </div>
+                        <div class="flex bollywood-movie-container">
+                            <div class="card">
+                                <img src="/black.jpg" alt="" class="paisa" >
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+
+
+
+                                
+                        </div>
+                        <hr>
+                        <div class="Sollywood header">
+                            <div id="Sollywood1">
+                                <h2><em>Latest South Indian Movies in hindi Dubbed</em></h2>
+                        
+                            </div>
+                        </div>
+
+                        <div class="flex bollywood-movie-container">
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                                
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/black.jpg" alt="">
+                                <div class="button-container">
+                                      
+                                    <button type="button" class="button1 trailer"><a href="#">Watch Trailer</a></button>
+                                    <button type="button" class="button2 download"><a href="">Download</a></button>
+    
+                                </div>
+                            </div>
+                        </div>        
+
+                        <hr>
+
+
+
+
+                        <div class="last">
+                            <div class="font">
+                                <ul class="icon">
+                                    <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+                                    <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+                                    <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                                    <li class="youtube"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="about">
+                                <ul class="info-link">
+                                    <li class="li1 home"><a href="">Home</a></li>
+                                    <li class="li1 developer"><a href="">Developers</a></li>
+                                    <li class="li1 about"><a href="">About</a></li>
+                                    <li class="li1 contact"><a href="">Contact-Us</a></li>
+                                    <li class=" li1 help"><a href="">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="copy"> 
+                                <h2><i>Movies3star.Com <sup> </sup></i></h2>
+    
+                            </div>
+                        </div>
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
